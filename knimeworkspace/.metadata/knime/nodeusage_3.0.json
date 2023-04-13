@@ -1,0 +1,113 @@
+
+{
+    "version": "4.7.1.v202301311353",
+    "created": "2023-03-09 13:41",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory#CSV Reader",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 8632,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.mine.treeensemble2.node.randomforest.predictor.classification.RandomForestClassificationPredictorNodeFactory2#Random Forest Predictor"
+            },
+            {
+                "id": "org.knime.base.node.mine.cluster.kmeans.ClusterNodeFactory2#k-Means",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 5976,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.viz.property.color.ColorManager2NodeFactory#Color Manager"
+            },
+            {
+                "id": "org.knime.base.node.viz.property.color.ColorManager2NodeFactory#Color Manager",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 3,
+                "nrcreated": 1,
+                "successor": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot"
+            },
+            {
+                "id": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 5892,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.partition.PartitionNodeFactory#Partitioning",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 9502,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.mine.knn.KnnNodeFactory2#K Nearest Neighbor"
+            },
+            {
+                "id": "org.knime.base.node.mine.knn.KnnNodeFactory2#K Nearest Neighbor",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 5052,
+                "nrcreated": 1,
+                "successor": "org.knime.js.base.node.viz.plotter.roc.ROCCurveNodeFactory#ROC Curve"
+            },
+            {
+                "id": "org.knime.base.node.mine.treeensemble2.node.randomforest.predictor.classification.RandomForestClassificationPredictorNodeFactory2#Random Forest Predictor",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 5052,
+                "nrcreated": 1,
+                "successor": "org.knime.js.base.node.viz.plotter.roc.ROCCurveNodeFactory#ROC Curve"
+            },
+            {
+                "id": "org.knime.base.node.mine.treeensemble2.node.randomforest.learner.classification.RandomForestClassificationLearnerNodeFactory2#Random Forest Learner",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 25812,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.mine.treeensemble2.node.randomforest.predictor.classification.RandomForestClassificationPredictorNodeFactory2#Random Forest Predictor"
+            },
+            {
+                "id": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory#Scorer",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 15589,
+                "nrcreated": 2,
+                "successor": "org.knime.js.base.node.viz.heatmap.HeatMapNodeFactory#Heatmap"
+            },
+            {
+                "id": "org.knime.js.base.node.viz.heatmap.HeatMapNodeFactory#Heatmap",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 7795,
+                "nrcreated": 2,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.js.base.node.viz.plotter.roc.ROCCurveNodeFactory#ROC Curve",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 93984,
+                "nrcreated": 2,
+                "successor": "n/a"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        }
+    },
+    "uptime": 27016123,
+    "workflowsOpened": 2,
+    "remoteWorkflowsOpened": 0,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 0,
+    "workflowsExported": 0,
+    "webUIPerspectiveSwitches": 0,
+    "launches": 2,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 54032247,
+    "crashes": 0,
+    "properlyShutDown": true
+}

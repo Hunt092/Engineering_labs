@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			input {
+				margin: 1rem 0;
+			}
+		</style>
+	</head>
+	<body
+		style="
+			display: flex;
+			height: 100vh;
+			width: 100vw;
+			justify-content: center;
+			align-items: center;
+		"
+	>
+		<main style="border: 1px solid; padding: 1rem">
+			<div class="logo__wrapper">
+				<img src="" alt="googleLogo" />
+			</div>
+			<div class="form__wrapper">
+				<h1>Create your Google Account</h1>
+				<form action="">
+					<div class="form__name" style="display: flex; gap: 0.25em">
+						<input
+							type="text"
+							name="firstname"
+							placeholder="Frist Name"
+							required
+						/>
+						<input
+							type="text"
+							name="lastname"
+							placeholder="Last Name"
+							required
+						/>
+					</div>
+					<input type="email" placeholder="Username" />
+
+					<div class="form__password" style="display: flex; gap: 0.25em">
+						<input
+							type="password"
+							required
+							placeholder="password"
+							name="Password"
+						/>
+						<input type="password" placeholder="Confirm" name="Confirm" />
+					</div>
+					<input type="checkbox" name="passwordtoggle" />
+					<label for="passwordtoggle">Show Password</label>
+					<div
+						class="butoons"
+						style="display: flex; width: 100%; justify-content: space-between"
+					>
+						<a href="#">Sign in Instead</a>
+
+						<input type="button" name="Next" id="" value="Next" />
+					</div>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

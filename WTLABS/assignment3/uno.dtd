@@ -1,0 +1,6 @@
+<!DOCTYPE Employed [
+<!ELEMENT Employed (Employee,Header,Cell)>
+<!ELEMENT Employee (#PCDATA)>
+<!ELEMENT Header (#PCDATA)>
+<!ELEMENT Cell (#PCDATA)>
+]>

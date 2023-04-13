@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="examregistry.css">
+ <!-- Bootstrap CSS -->
+ <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+rel="stylesheet"
+ integrity="sha384-
+F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+crossorigin="anonymous">
+ <title>EBookForm</title>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <div class="container-fluid">
+ <a class="navbar-brand" href="#">Exam Registry</a>
+ </div>
+ <a href="index.html"><button class="btn btn-outlinedanger">Home</button></a>
+ </nav>
+ <br><br><br>
+ <center>
+ <form action="examregistry.jsp" method="POST">
+ <h1>EBookShop</h1><br>
+ <hr>
+ <br><br>
+ <div class="mb-3">
+ <label for="id" class="form-label">ID</label>
+ <input type="number" class="form-control" id="id" name="ID"
+required>
+ </div>
+ <div class="mb-3">
+ <label for="title" class="form-label">Title</label>
+ <input type="text" class="form-control" id="title" name="Title"
+required>
+ </div>
+ <div class="mb-3">
+ <label for="author" class="form-label">Author</label>
+ <input type="text" class="form-control" id="author" name="Author"
+required>
+ </div>
+ <div class="mb-3">
+ <label for="price" class="form-label">Price</label>
+ <input type="text" class="form-control" id="price" name="Price"
+required>
+ </div>
+ <div class="mb-3">
+ <label for="quantity" class="form-label">Quantity</label>
+ <input type="text" class="form-control" id="quantity"
+name="Quantity" required>
+ </div>
+ <a href="loggedin.html"><input type="submit" value="Submit" class="btn 
+btn-primary" id="submit" ></a>
+ </form>
+ </center>
+ <br><br>
+ <script src="Afterlogin.js"></script>
+ <footer class="footer mt-auto py-3 bg-dark">
+ <div class="container">
+ <span class="text-muted">TB © All Rights Reserved 2021</span>
+ </div>
+ </footer>
+ <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-
+/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+ crossorigin="anonymous"></script>
+</body>
+</html>

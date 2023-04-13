@@ -1,0 +1,29 @@
+import socket
+import select
+
+UDP_IP = "127.0.0.1"
+IN_PORT = 5005
+timeout = 3
+
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.bind((UDP_IP, IN_PORT))
+
+while True:
+    data, addr = sock.recvfrom(1024)
+    if data:
+        data = data.decode()
+        print("File name:", data)
+        file_name, ext = data.strip().split('.')
+        file_name = file_name+"_rev."+ext
+    f = open(f"{file_name}", 'wb')
+
+    while True:
+        ready = select.select([sock], [], [], timeout)
+        if ready[0]:
+            data, addr = sock.recvfrom(1024)
+            f.write(data)
+        else:
+            print(f"{file_name} Finish!")
+            f.close()
+            break

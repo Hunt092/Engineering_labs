@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?xml-stylesheet type="text/xsl" href="dos.xsl"?>
+<emp
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="dos.xsd">
+ <employee>
+           <ID>20</ID>
+           <Name>Govardhan</Name>
+           <sal>200000</sal>
+           <des>Manager</des>
+    </employee>
+ <employee>
+           <ID>23</ID>
+           <Name>Gopidas</Name>
+           <sal>3000000</sal>
+           <des>Dept.Manager</des>
+   </employee>
+</emp>

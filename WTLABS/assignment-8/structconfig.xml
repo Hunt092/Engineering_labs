@@ -1,0 +1,17 @@
+<action-mappings>
+<action input="/login.jsp" name="LoginForm" path="/Login" scope="session" type="com.tutorials4u.actions.LoginAction">
+<forward name="success" path="/success.jsp" />
+<forward name="failure" path="/failure.jsp" />
+</action>
+</action-mappings>
+<struts-config>
+<form-beans>
+<form-bean name="LoginForm" type="com.Test.LoginForm"/>
+</form-beans>
+<action-mappings>
+<action input="/login.jsp" name="LoginForm" path="/Login" scope="session" type="com.tutorials4u.forms.LoginAction">
+<forward name="success" path="/success.jsp" />
+<forward name="failure" path="/failure.jsp" />
+</action>
+</action-mappings>
+</struts-config>

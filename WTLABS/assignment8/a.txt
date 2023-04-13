@@ -1,0 +1,265 @@
+Register.java
+import java.io.IOException; 
+import java.io.PrintWriter; 
+import java.sql.DriverManager; 
+import java.sql.PreparedStatement; 
+import java.sql.Connection; 
+import javax.servlet.ServletException; 
+import javax.servlet.http.HttpServlet; 
+import javax.servlet.http.HttpServletRequest; 
+import javax.servlet.http.HttpServletResponse; 
+/** 
+ * Servlet implementation class Register 
+*/ 
+public class Register extends HttpServlet { 
+ private static final long serialVersionUID = 1L; 
+ /** 
+ * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response) 
+ */ 
+ protected void doPost(HttpServletRequest request, HttpServletResponse response) throws 
+ServletException, IOException { 
+ // TODO Auto-generated method stub 
+ response.setContentType("text/html"); 
+ PrintWriter out = response.getWriter(); 
+ String uname = request.getParameter("uname"); 
+ String upwd = request.getParameter("upwd"); 
+ String fname = request.getParameter("fname"); 
+ String lname = request.getParameter("lname"); 
+ String ugender=request.getParameter("gender"); 
+ String uemail = request.getParameter("uemail"); 
+ String ucourse = request.getParameter("ucourse"); 
+ String umob = request.getParameter("umno"); 
+ 
+ try { 
+ Class.forName("com.mysql.jdbc.Driver"); 
+ Connection con = 
+DriverManager.getConnection("jdbc:mysql://localhost:3306/register","root","atulya123"); 
+ PreparedStatement ps = con.prepareStatement("insert into student values 
+(?,?,?,?,?,?,?,?)"); 
+ ps.setString(1,uname); 
+ ps.setString(2, upwd); 
+ ps.setString(3, fname); 
+ ps.setString(4, lname); 
+ ps.setString(5, ugender); 
+ ps.setString(6, uemail); 
+ ps.setString(7, ucourse); 
+ ps.setString(8, umob); 
+ 
+ int i = ps.executeUpdate(); 
+ if(i>0) { 
+ out.println("You are registered Successfully!!"); 
+ out.print("<a href='login.jsp'>Click Here for Login</a>"); 
+ } 
+ else { 
+ out.print("Error!!"); 
+ } 
+ } 
+ catch(Exception ee) { 
+ ee.printStackTrace(); 
+ } 
+ } 
+} 
+register.jsp 
+<%@ page language="java" contentType="text/html; charset=UTF-8" 
+ pageEncoding="UTF-8"%> 
+<!DOCTYPE html> 
+<html> 
+ <!--Invisible Part--> 
+ <head> 
+ <title>Student Registration Form</title> 
+ <script> 
+ function validate(){ 
+ var uname = stdreg.uname.value; 
+ var upwd = stdreg.upwd.value; 
+ var fname = stdreg.fname.value; 
+ var lname = stdreg.lname.value; 
+ var uemail = stdreg.uemail.value; 
+ var ucourse = stdreg.ucourse.selectedIndex; 
+ var umobno = stdreg.umno.value; 
+ var flag = false; 
+ var str = ""; 
+ var efilter = /^([a-zA-Z0-9\_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+ if(uname.trim()===""){ 
+ flag=true; 
+ str +=" Username should not be blank!!\n"; 
+ } 
+ if(upwd.trim()===""){ 
+ flag=true; 
+ str +=" Password is Blank or Does not Match!!\n"; 
+ } 
+ if(fname.trim()===""){ 
+ flag = true; 
+ str += " Firstname should not be blank!!\n"; 
+ } 
+ if(lname.trim()===""){ 
+ flag=true; 
+ str += " Lastname should not be blank!!\n"; 
+ } 
+ if(stdreg.gender[0].checked==false&&stdreg.gender[1].checked==false){ 
+ flag=true; 
+ str +=" Gender is not selected!!\n"; 
+ } 
+ if(!efilter.test(uemail)){ 
+ flag=true; 
+ str +=" Email is not valid!!!\n"; 
+ } 
+ if(ucourse==0){ 
+ flag=true; 
+ str+=" Course is not selected!!\n"; 
+ } 
+ if(isNaN(umobno)||umobno.length<12){ 
+ flag = true; 
+ str+=" Mobile Number is not valid!!\n"; 
+ } 
+ if(flag){ 
+ alert("Warning!!\n"+str); 
+ return false; 
+ } 
+ else{ 
+ return true; 
+ } 
+ } 
+ </script> 
+ <link rel="stylesheet" href="style.css"> 
+ </head> 
+ <!--Visible Part--> 
+ <body> 
+ <h1 align="center">Registration Form</h1> 
+ <hr> 
+ <div class="container"> 
+ <form name="stdreg" onsubmit="return validate();" action="register" method="post"> 
+ <div class="row"> 
+ <div class="col-20"><label>Username:</label></div> 
+ <div class="col-80"><input type="text" name="uname" placeholder="Enter your 
+username"></div> 
+ </div> 
+ <div class="row"> 
+ <div class="col-20"><label>Password:</label></div> 
+ <div class="col-80"><input type="password" name="upwd" placeholder="Enter your 
+password"></div> 
+ </div> 
+ 
+ <div class="row"> 
+ <div class="col-20"><label>Firstname:</label></div> 
+ <div class="col-80"><input type="text" name="fname" placeholder="Enter your 
+firstname"></div> 
+ </div> 
+ <div class="row"> 
+ <div class="col-20"><label>Lastname:</label></div> 
+ <div class="col-80"><input type="text" name="lname" placeholder="Enter your 
+lastname"></div> 
+ </div> 
+ <div class="row"> 
+ <div class="col-20"><label>Gender:</label></div> 
+ <div class="col-80"> 
+ <input type="radio" name="gender" value="Male">Male 
+ <input type="radio" name="gender" value="Female">Female 
+ </div> 
+ </div> 
+ <div class="row"> 
+ <div class="col-20"><label>Email:</label></div> 
+ <div class="col-80"><input type="text" name="uemail" placeholder="Enter your email 
+id"></div> 
+ </div> 
+ <div class="row"> 
+ <div class="col-20"><label>Course:</label></div> 
+ <div class="col-80"><select name="ucourse"> 
+ <option>Select Class</option> 
+ <option>SE COMP</option> 
+ <option>TE COMP</option> 
+ <option>BE COMP</option> 
+ </select></div> 
+ </div> 
+ <div class="row"> 
+ <div class="col-20"><label>Mobile No.:</label></div> 
+ <div class="col-80"><input type="text" name="umno" placeholder="Enter your mobile 
+number"></div> 
+ </div> 
+ <div class="row"> 
+ <input type="submit" value="Submit"> 
+ <input type="reset" value="Reset"> 
+ </div> 
+ </form> 
+ </div> 
+ </body> 
+</html> 
+style.css 
+@charset "UTF-8"; 
+*{ 
+ box-sizing: border-box; 
+} 
+.container{ 
+ background-color: aquamarine; 
+ border:1px solid red; 
+ border-radius: 5px; 
+ padding: 10px; 
+ width: 80%; 
+ margin: auto; 
+} 
+.row:after{ 
+ content: " "; 
+ display: table; 
+ clear: both; 
+} 
+.col-20{ 
+ width: 20%; 
+ float:left; 
+ margin-top: 5px; 
+} 
+.col-80{ 
+ width: 80%; 
+ float:left; 
+ margin-top: 5px; 
+} 
+input[type=text],input[type=password],input[type=email]{ 
+ width: 100%; 
+ padding:5px; 
+} 
+.login{ 
+ width: 45%; 
+ margin: auto; 
+ border: 1px solid red; 
+ border-radius: 5px; 
+ padding: 10px; 
+ background-color: bisque; 
+} 
+input[type=submit],input[type="reset"]{ 
+ cursor: pointer; 
+} 
+.leavespace{ 
+ margin-top:20px; 
+} 
+web.xml 
+<?xml version="1.0" encoding="UTF-8"?> 
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/webapp_3_1.xsd" id="WebApp_ID" version="3.1"> 
+ <display-name>LoginApplication</display-name> 
+ <welcome-file-list> 
+ <welcome-file>login.jsp</welcome-file> 
+ </welcome-file-list> 
+ <servlet> 
+ <servlet-name>MyLogin</servlet-name> 
+ <servlet-class>Login</servlet-class> 
+ </servlet> 
+ <servlet-mapping> 
+ <servlet-name>MyLogin</servlet-name> 
+ <url-pattern>/login</url-pattern> 
+ </servlet-mapping> 
+ <servlet> 
+ <servlet-name>MyRegister</servlet-name> 
+ <servlet-class>Register</servlet-class> 
+ </servlet> 
+ <servlet-mapping> 
+ <servlet-name>MyRegister</servlet-name> 
+ <url-pattern>/register</url-pattern> 
+ </servlet-mapping> 
+ <servlet> 
+ <servlet-name>MyLogout</servlet-name> 
+ <servlet-class>Logout</servlet-class> 
+ </servlet> 
+ <servlet-mapping> 
+ <servlet-name>MyLogout</servlet-name> 
+ <url-pattern>/logout</url-pattern> 
+ </servlet-mapping> 
+</web-app>

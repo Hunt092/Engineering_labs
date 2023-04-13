@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="examregistry.css">
+ <!-- Bootstrap CSS -->
+ <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-
+F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+crossorigin="anonymous">
+ <title>Form</title>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <div class="container-fluid">
+ <a class="navbar-brand" href="#">Students Info</a>
+ </div>
+ <a href="index.html"><button class="btn btn-outlinedanger">Home</button></a>
+ </nav>
+ <br><br><br>
+ <center>
+ <form action="examregistry.jsp" method="POST">
+ <h1>Students Info</h1><br>
+ <hr>
+ <br><br>
+ <div class="mb-3">
+ <label for="id" class="form-label">ID</label>
+ <input type="number" class="form-control" id="id" name="ID"
+required>
+ </div>
+ <div class="mb-3">
+ <label for="name" class="form-label">Name</label>
+ <input type="text" class="form-control" id="name" name="Name"
+required>
+ </div>
+ <div class="mb-3">
+ <label for="division" class="form-label">Division</label>
+ <input type="text" class="form-control" id="division"
+name="Division" required>
+ </div>
+ <div class="mb-3">
+ <label for="city" class="form-label">City</label>
+ <input type="text" class="form-control" id="city" name="City"
+required>
+ <a href="loggedin.html"><input type="submit" value="Submit" class="btn 
+btn-primary" id="submit" ></a>
+ </form>
+ </center>
+ <br><br>
+ <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-
+/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+ crossorigin="anonymous"></script>
+</body>
+</html>

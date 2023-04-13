@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Employed SYSTEM "uno.dtd">
+
+<?xml-stylesheet href="style.css" type = "text/css"?>
+
+<Employed>
+
+<Employee>
+<Header>Employee Name</Header>
+<Header>Employee Department</Header>
+<Header>Employee Salary</Header>
+</Employee>
+
+<Employee>
+<Cell>Ramesh</Cell>
+<Cell>Tech</Cell>
+<Cell>2000000</Cell>
+</Employee>
+
+<Employee>
+<Cell>Suresh</Cell>
+<Cell>Marketing</Cell>
+<Cell>1500000</Cell>
+</Employee>
+
+<Employee>
+<Cell>Hitesh</Cell>
+<Cell>Sales</Cell>
+<Cell>1800000</Cell>
+</Employee>
+
+</Employed>

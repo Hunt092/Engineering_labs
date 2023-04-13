@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="viewRepresentation">
+    <entry key="tableID" type="xstring" value="987c7667-79de-4283-addf-81f944cd8a03"/>
+    <config key="curveSettings">
+        <config key="SepalLengthCm">
+            <config key="x_values">
+                <entry key="array-size" type="xint" value="24"/>
+                <entry key="0" type="xdouble" value="0.0"/>
+                <entry key="1" type="xdouble" value="0.07407407407407407"/>
+                <entry key="2" type="xdouble" value="0.1111111111111111"/>
+                <entry key="3" type="xdouble" value="0.14814814814814814"/>
+                <entry key="4" type="xdouble" value="0.18518518518518517"/>
+                <entry key="5" type="xdouble" value="0.2222222222222222"/>
+                <entry key="6" type="xdouble" value="0.2962962962962963"/>
+                <entry key="7" type="xdouble" value="0.3333333333333333"/>
+                <entry key="8" type="xdouble" value="0.4444444444444444"/>
+                <entry key="9" type="xdouble" value="0.5185185185185185"/>
+                <entry key="10" type="xdouble" value="0.5925925925925926"/>
+                <entry key="11" type="xdouble" value="0.7037037037037037"/>
+                <entry key="12" type="xdouble" value="0.7407407407407407"/>
+                <entry key="13" type="xdouble" value="0.8518518518518519"/>
+                <entry key="14" type="xdouble" value="0.9629629629629629"/>
+                <entry key="15" type="xdouble" value="0.9629629629629629"/>
+                <entry key="16" type="xdouble" value="0.9629629629629629"/>
+                <entry key="17" type="xdouble" value="1.0"/>
+                <entry key="18" type="xdouble" value="1.0"/>
+                <entry key="19" type="xdouble" value="1.0"/>
+                <entry key="20" type="xdouble" value="1.0"/>
+                <entry key="21" type="xdouble" value="1.0"/>
+                <entry key="22" type="xdouble" value="1.0"/>
+                <entry key="23" type="xdouble" value="1.0"/>
+            </config>
+            <config key="y_values">
+                <entry key="array-size" type="xint" value="24"/>
+                <entry key="0" type="xdouble" value="0.0"/>
+                <entry key="1" type="xdouble" value="0.0"/>
+                <entry key="2" type="xdouble" value="0.0"/>
+                <entry key="3" type="xdouble" value="0.0"/>
+                <entry key="4" type="xdouble" value="0.0"/>
+                <entry key="5" type="xdouble" value="0.0"/>
+                <entry key="6" type="xdouble" value="0.0"/>
+                <entry key="7" type="xdouble" value="0.0"/>
+                <entry key="8" type="xdouble" value="0.0"/>
+                <entry key="9" type="xdouble" value="0.0"/>
+                <entry key="10" type="xdouble" value="0.0"/>
+                <entry key="11" type="xdouble" value="0.0"/>
+                <entry key="12" type="xdouble" value="0.0"/>
+                <entry key="13" type="xdouble" value="0.0"/>
+                <entry key="14" type="xdouble" value="0.1111111111111111"/>
+                <entry key="15" type="xdouble" value="0.16666666666666666"/>
+                <entry key="16" type="xdouble" value="0.3888888888888889"/>
+                <entry key="17" type="xdouble" value="0.5555555555555556"/>
+                <entry key="18" type="xdouble" value="0.6111111111111112"/>
+                <entry key="19" type="xdouble" value="0.6666666666666666"/>
+                <entry key="20" type="xdouble" value="0.7222222222222222"/>
+                <entry key="21" type="xdouble" value="0.8333333333333334"/>
+                <entry key="22" type="xdouble" value="0.9444444444444444"/>
+                <entry key="23" type="xdouble" value="1.0"/>
+            </config>
+            <entry key="name" type="xstring" value="SepalLengthCm"/>
+            <entry key="area" type="xdouble" value="0.02366255144032924"/>
+            <entry key="max_points" type="xint" value="2000"/>
+        </config>
+        <config key="SepalWidthCm">
+            <config key="x_values">
+                <entry key="array-size" type="xint" value="19"/>
+                <entry key="0" type="xdouble" value="0.0"/>
+                <entry key="1" type="xdouble" value="0.0"/>
+                <entry key="2" type="xdouble" value="0.0"/>
+                <entry key="3" type="xdouble" value="0.0"/>
+                <entry key="4" type="xdouble" value="0.0"/>
+                <entry key="5" type="xdouble" value="0.0"/>
+                <entry key="6" type="xdouble" value="0.037037037037037035"/>
+                <entry key="7" type="xdouble" value="0.037037037037037035"/>
+                <entry key="8" type="xdouble" value="0.1111111111111111"/>
+                <entry key="9" type="xdouble" value="0.14814814814814814"/>
+                <entry key="10" type="xdouble" value="0.4074074074074074"/>
+                <entry key="11" type="xdouble" value="0.4444444444444444"/>
+                <entry key="12" type="xdouble" value="0.6296296296296297"/>
+                <entry key="13" type="xdouble" value="0.7037037037037037"/>
+                <entry key="14" type="xdouble" value="0.7777777777777778"/>
+                <entry key="15" type="xdouble" value="0.8518518518518519"/>
+                <entry key="16" type="xdouble" value="0.8888888888888888"/>
+                <entry key="17" type="xdouble" value="0.9629629629629629"/>
+                <entry key="18" type="xdouble" value="1.0"/>
+            </config>
+            <config key="y_values">
+                <entry key="array-size" type="xint" value="19"/>
+                <entry key="0" type="xdouble" value="0.0"/>
+                <entry key="1" type="xdouble" value="0.05555555555555555"/>
+                <entry key="2" type="xdouble" value="0.1111111111111111"/>
+                <entry key="3" type="xdouble" value="0.16666666666666666"/>
+                <entry key="4" type="xdouble" value="0.2222222222222222"/>
+                <entry key="5" type="xdouble" value="0.3888888888888889"/>
+                <entry key="6" type="xdouble" value="0.5"/>
+                <entry key="7" type="xdouble" value="0.5555555555555556"/>
+                <entry key="8" type="xdouble" value="0.6111111111111112"/>
+                <entry key="9" type="xdouble" value="0.6666666666666666"/>
+                <entry key="10" type="xdouble" value="0.9444444444444444"/>
+                <entry key="11" type="xdouble" value="1.0"/>
+                <entry key="12" type="xdouble" value="1.0"/>
+                <entry key="13" type="xdouble" value="1.0"/>
+                <entry key="14" type="xdouble" value="1.0"/>
+                <entry key="15" type="xdouble" value="1.0"/>
+                <entry key="16" type="xdouble" value="1.0"/>
+                <entry key="17" type="xdouble" value="1.0"/>
+                <entry key="18" type="xdouble" value="1.0"/>
+            </config>
+            <entry key="name" type="xstring" value="SepalWidthCm"/>
+            <entry key="area" type="xdouble" value="0.8837448559670782"/>
+            <entry key="max_points" type="xint" value="2000"/>
+        </config>
+        <config key="PetalLengthCm">
+            <config key="x_values">
+                <entry key="array-size" type="xint" value="27"/>
+                <entry key="0" type="xdouble" value="0.0"/>
+                <entry key="1" type="xdouble" value="0.037037037037037035"/>
+                <entry key="2" type="xdouble" value="0.07407407407407407"/>
+                <entry key="3" type="xdouble" value="0.1111111111111111"/>
+                <entry key="4" type="xdouble" value="0.18518518518518517"/>
+                <entry key="5" type="xdouble" value="0.2222222222222222"/>
+                <entry key="6" type="xdouble" value="0.25925925925925924"/>
+                <entry key="7" type="xdouble" value="0.3333333333333333"/>
+                <entry key="8" type="xdouble" value="0.37037037037037035"/>
+                <entry key="9" type="xdouble" value="0.4074074074074074"/>
+                <entry key="10" type="xdouble" value="0.48148148148148145"/>
+                <entry key="11" type="xdouble" value="0.5185185185185185"/>
+                <entry key="12" type="xdouble" value="0.5555555555555556"/>
+                <entry key="13" type="xdouble" value="0.5925925925925926"/>
+                <entry key="14" type="xdouble" value="0.6296296296296297"/>
+                <entry key="15" type="xdouble" value="0.7037037037037037"/>
+                <entry key="16" type="xdouble" value="0.7777777777777778"/>
+                <entry key="17" type="xdouble" value="0.8888888888888888"/>
+                <entry key="18" type="xdouble" value="0.9259259259259259"/>
+                <entry key="19" type="xdouble" value="0.9629629629629629"/>
+                <entry key="20" type="xdouble" value="1.0"/>
+                <entry key="21" type="xdouble" value="1.0"/>
+                <entry key="22" type="xdouble" value="1.0"/>
+                <entry key="23" type="xdouble" value="1.0"/>
+                <entry key="24" type="xdouble" value="1.0"/>
+                <entry key="25" type="xdouble" value="1.0"/>
+                <entry key="26" type="xdouble" value="1.0"/>
+            </config>
+            <config key="y_values">
+                <entry key="array-size" type="xint" value="27"/>
+                <entry key="0" type="xdouble" value="0.0"/>
+                <entry key="1" type="xdouble" value="0.0"/>
+                <entry key="2" type="xdouble" value="0.0"/>
+                <entry key="3" type="xdouble" value="0.0"/>
+                <entry key="4" type="xdouble" value="0.0"/>
+                <entry key="5" type="xdouble" value="0.0"/>
+                <entry key="6" type="xdouble" value="0.0"/>
+                <entry key="7" type="xdouble" value="0.0"/>
+                <entry key="8" type="xdouble" value="0.0"/>
+                <entry key="9" type="xdouble" value="0.0"/>
+                <entry key="10" type="xdouble" value="0.0"/>
+                <entry key="11" type="xdouble" value="0.0"/>
+                <entry key="12" type="xdouble" value="0.0"/>
+                <entry key="13" type="xdouble" value="0.0"/>
+                <entry key="14" type="xdouble" value="0.0"/>
+                <entry key="15" type="xdouble" value="0.0"/>
+                <entry key="16" type="xdouble" value="0.0"/>
+                <entry key="17" type="xdouble" value="0.0"/>
+                <entry key="18" type="xdouble" value="0.0"/>
+                <entry key="19" type="xdouble" value="0.0"/>
+                <entry key="20" type="xdouble" value="0.0"/>
+                <entry key="21" type="xdouble" value="0.05555555555555555"/>
+                <entry key="22" type="xdouble" value="0.2777777777777778"/>
+                <entry key="23" type="xdouble" value="0.3888888888888889"/>
+                <entry key="24" type="xdouble" value="0.8333333333333334"/>
+                <entry key="25" type="xdouble" value="0.9444444444444444"/>
+                <entry key="26" type="xdouble" value="1.0"/>
+            </config>
+            <entry key="name" type="xstring" value="PetalLengthCm"/>
+            <entry key="area" type="xdouble" value="0.0"/>
+            <entry key="max_points" type="xint" value="2000"/>
+        </config>
+        <config key="PetalWidthCm">
+            <config key="x_values">
+                <entry key="array-size" type="xint" value="19"/>
+                <entry key="0" type="xdouble" value="0.0"/>
+                <entry key="1" type="xdouble" value="0.037037037037037035"/>
+                <entry key="2" type="xdouble" value="0.1111111111111111"/>
+                <entry key="3" type="xdouble" value="0.14814814814814814"/>
+                <entry key="4" type="xdouble" value="0.18518518518518517"/>
+                <entry key="5" type="xdouble" value="0.4074074074074074"/>
+                <entry key="6" type="xdouble" value="0.48148148148148145"/>
+                <entry key="7" type="xdouble" value="0.5555555555555556"/>
+                <entry key="8" type="xdouble" value="0.5925925925925926"/>
+                <entry key="9" type="xdouble" value="0.7407407407407407"/>
+                <entry key="10" type="xdouble" value="0.8518518518518519"/>
+                <entry key="11" type="xdouble" value="0.9259259259259259"/>
+                <entry key="12" type="xdouble" value="1.0"/>
+                <entry key="13" type="xdouble" value="1.0"/>
+                <entry key="14" type="xdouble" value="1.0"/>
+                <entry key="15" type="xdouble" value="1.0"/>
+                <entry key="16" type="xdouble" value="1.0"/>
+                <entry key="17" type="xdouble" value="1.0"/>
+                <entry key="18" type="xdouble" value="1.0"/>
+            </config>
+            <config key="y_values">
+                <entry key="array-size" type="xint" value="19"/>
+                <entry key="0" type="xdouble" value="0.0"/>
+                <entry key="1" type="xdouble" value="0.0"/>
+                <entry key="2" type="xdouble" value="0.0"/>
+                <entry key="3" type="xdouble" value="0.0"/>
+                <entry key="4" type="xdouble" value="0.0"/>
+                <entry key="5" type="xdouble" value="0.0"/>
+                <entry key="6" type="xdouble" value="0.0"/>
+                <entry key="7" type="xdouble" value="0.0"/>
+                <entry key="8" type="xdouble" value="0.0"/>
+                <entry key="9" type="xdouble" value="0.0"/>
+                <entry key="10" type="xdouble" value="0.0"/>
+                <entry key="11" type="xdouble" value="0.0"/>
+                <entry key="12" type="xdouble" value="0.0"/>
+                <entry key="13" type="xdouble" value="0.05555555555555555"/>
+                <entry key="14" type="xdouble" value="0.1111111111111111"/>
+                <entry key="15" type="xdouble" value="0.16666666666666666"/>
+                <entry key="16" type="xdouble" value="0.3333333333333333"/>
+                <entry key="17" type="xdouble" value="0.9444444444444444"/>
+                <entry key="18" type="xdouble" value="1.0"/>
+            </config>
+            <entry key="name" type="xstring" value="PetalWidthCm"/>
+            <entry key="area" type="xdouble" value="0.0"/>
+            <entry key="max_points" type="xint" value="2000"/>
+        </config>
+    </config>
+    <entry key="enableStaggeredRendering" type="xboolean" value="true"/>
+    <entry key="resizeToWindow" type="xboolean" value="true"/>
+    <entry key="displayFullscreenButton" type="xboolean" value="true"/>
+    <entry key="dataAreaColor" type="xstring" value="rgba(230,230,230,1.0)"/>
+    <entry key="backgroundColor" type="xstring" value="rgba(255,255,255,1.0)"/>
+    <entry key="gridColor" type="xstring" value="rgba(255,255,255,1.0)"/>
+    <entry key="lineWidth" type="xint" value="2"/>
+    <entry key="imageWidth" type="xint" value="800"/>
+    <entry key="imageHeight" type="xint" value="600"/>
+    <entry key="showGrid" type="xboolean" value="true"/>
+    <entry key="showArea" type="xboolean" value="true"/>
+    <config key="colors"/>
+    <entry key="showLegend" type="xboolean" value="true"/>
+    <entry key="enableControls" type="xboolean" value="true"/>
+    <entry key="enableEditTitle" type="xboolean" value="true"/>
+    <entry key="enableEditSubtitle" type="xboolean" value="true"/>
+    <entry key="enableEditXAxisLabel" type="xboolean" value="true"/>
+    <entry key="enableEditYAxisLabel" type="xboolean" value="true"/>
+    <entry key="showWarningInView" type="xboolean" value="true"/>
+    <entry key="hasWarnings" type="xboolean" value="false"/>
+    <entry key="ignoreMissingValues" type="xboolean" value="false"/>
+</config>

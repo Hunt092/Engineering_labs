@@ -1,0 +1,45 @@
+Employed {
+	display: table;
+	font-size: 14px;
+	margin: 8px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width: 80%;
+	position: relative;
+	animation: rollin 2s ease-in-out forwards;
+	padding: 5%;
+}
+
+Employee {
+	display: table-row;
+	text-align: center;
+	border: 1px solid black;
+	padding: 10px;
+	background-color: whitesmoke;
+}
+
+Cell,
+Header {
+	display: table-cell;
+	border: solid 1px;
+	width: 25%;
+	font-size: 25px;
+}
+
+Header {
+	background-color: rgb(69, 209, 255);
+}
+
+Cell {
+	background-color: rgb(243, 243, 159);
+	animation: rollin 5s forwards;
+}
+
+@keyframes rollin {
+	0% {
+		transform: translateX(-100%) scale(0) rotate(360deg);
+	}
+	100% {
+		top: 0%;
+		transform: translateX(0%) scale(1) rotate(0deg);
+	}
+}
